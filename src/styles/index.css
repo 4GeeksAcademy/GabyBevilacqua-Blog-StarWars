@@ -1,3 +1,52 @@
-/* 
-    General Styles
-*/
+.custom-navbar {
+    background-color: black;
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.custom-navbar .navbar-logo {
+    height: 75px;
+}
+
+.dropdown .btn-secondary {
+    background-color: rgb(85, 147, 197); 
+    color: black; 
+    border: none;
+    font-weight: bold;
+}
+
+.dropdown .btn-secondary:hover {
+    background-color: rgb(128, 193, 247); 
+}
+
+.dropdown-menu {
+    background-color: rgb(85, 147, 197); 
+    color: black; 
+}
+
+.favorite-count {
+    font-weight: bold;
+}
+
+.dropdown-menu .dropdown-item {
+    color: black;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: lightyellow; 
+}
+
+.footer {
+    background-color: black;
+    color: white; 
+}
+
+.footer a {
+    color: rgb(0, 162, 255); 
+}
+
+.footer .fa-heart {
+    color: red;
+}

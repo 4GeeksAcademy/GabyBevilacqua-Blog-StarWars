@@ -1,0 +1,50 @@
+.character-container {
+    background-image: url('https://images.unsplash.com/photo-1633723251072-b9cf36493637?q=80&w=1771&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    color: white;
+    padding: 20px;
+}
+
+.character-image {
+    max-width: 700px;
+    margin-right: 20px;
+}
+
+.character-info {
+    flex: 1;
+}
+
+.character-history {
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.details-column {
+    flex: 1;
+    margin: 10px;
+    background-color: #333;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.details-column h3 {
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    color: rgba(172, 211, 255, 0.7);
+}
+
+.character-details {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+.character-header {
+    display: flex;
+}
+.character-name {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: rgba(172, 211, 255, 0.7);
+}
