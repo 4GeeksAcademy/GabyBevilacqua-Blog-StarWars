@@ -12,7 +12,7 @@ export const Home = () => {
 	const { people, vehicles, planets } = store;
 
 	const characterImageMap = {
-		'5f63a36eee9fd7000499be42': '1',
+		'5f63a36eee9fd7000499be411': '1',
 		'5f63a36eee9fd7000499be43': '2',
 		'5f63a36eee9fd7000499be44': '3',
 		'5f63a36eee9fd7000499be45': '4',
@@ -25,7 +25,7 @@ export const Home = () => {
 	};
 
 	const planetImageMap = {
-		'5f7254c11b7dfa00041c6fae': '1',
+		'5f7254c11b7dfa00041c6fae': '11',
 		'5f7254c11b7dfa00041c6faf': '2',
 		'5f7254c11b7dfa00041c6fb0': '3',
 		'5f7254c11b7dfa00041c6fb1': '4',
@@ -49,7 +49,7 @@ export const Home = () => {
 		'5f63a160cf50d100047f9804': '20',
 		'5f63a160cf50d100047f9805': '24',
 	};
-
+// https://starwars-visualguide.com/assets/img/planets/11.jpg
 	return (
 		<div className="home-container">
 			<img src={starWarsLogo} alt="Star Wars Logo" className="star-wars-logo" />
@@ -118,12 +118,12 @@ export const Home = () => {
 											<div className="buttons d-flex justify-content-between">
 												<NavLink
 													to={`/planet/${planet.result._id}`}
-													className="btn btn-primary">
+													className="btn btn-secondary">
 													Learn More!
 												</NavLink>
 												<button
 													onClick={() => actions.modFavorites(planet)}
-													className={`btn btn-warning ${store.favorites.includes(planet) ? 'favorited' : ''}`}>
+													className={`btn btn-danger ${store.favorites.includes(planet) ? 'favorited' : ''}`}>
 													<i className={`fa ${store.favorites.includes(planet) ? 'fa-heart' : 'fa-heart-o'}`}></i>
 												</button>
 											</div>
@@ -156,12 +156,12 @@ export const Home = () => {
 											<div className="buttons d-flex justify-content-between">
 												<NavLink
 													to={`/vehicle/${vehicle.result._id}`}
-													className="btn btn-primary">
+													className="btn btn-secondary">
 													Learn More!
 												</NavLink>
 												<button
 													onClick={() => actions.modFavorites(vehicle)}
-													className={`btn btn-warning ${store.favorites.includes(vehicle) ? 'favorited' : ''}`}>
+													className={`btn btn-danger ${store.favorites.includes(vehicle) ? 'favorited' : ''}`}>
 													<i className={`fa ${store.favorites.includes(vehicle) ? 'fa-heart' : 'fa-heart-o'}`}></i>
 												</button>
 											</div>

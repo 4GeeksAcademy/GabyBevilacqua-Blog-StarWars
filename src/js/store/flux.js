@@ -23,7 +23,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 					if (response.ok) {
 						return data;
 					} else {
-						console.log(`Something bad happened at loolapalloza and ${data}`)
+						console.log(`Something went bad ${data}`)
 					}
 				} catch (error) {
 					console.log(error);

@@ -5,7 +5,7 @@ import "../../styles/character.css";
 
 
 const planetImageMap = {
-    '5f7254c11b7dfa00041c6fae': '1',
+    '5f7254c11b7dfa00041c6fae': '11',
     '5f7254c11b7dfa00041c6faf': '2',
     '5f7254c11b7dfa00041c6fb0': '3',
     '5f7254c11b7dfa00041c6fb1': '4',
@@ -54,8 +54,8 @@ export const Planets = () => {
         fetchPlanet();
     }, [id, planets]);
 
-    
-    const imageId = planetImageMap[id] || '1'; 
+
+    const imageId = planetImageMap[id] || '1';
 
     return (
         <div className="character-container">
@@ -68,38 +68,12 @@ export const Planets = () => {
                 <div className="character-info">
                     <h1 className="character-name">{planet.properties.name}</h1>
                     <p className="character-history">{planet.description || "No description available."}</p>
-                </div>
-            </div>
-
-            <div className="character-details">
-                <div className="details-column">
-                    <h3>Climate</h3>
-                    <p>{planet.properties.climate}</p>
-                </div>
-
-                <div className="details-column">
-                    <h3>Terrain</h3>
-                    <p>{planet.properties.terrain}</p>
-                </div>
-
-                <div className="details-column">
-                    <h3>Population</h3>
-                    <p>{planet.properties.population || "Unknown"}</p>
-                </div>
-
-                <div className="details-column">
-                    <h3>Orbital Period</h3>
-                    <p>{planet.properties.orbital_period}</p>
-                </div>
-
-                <div className="details-column">
-                    <h3>Rotation Period</h3>
-                    <p>{planet.properties.rotation_period}</p>
-                </div>
-
-                <div className="details-column">
-                    <h3>Diameter</h3>
-                    <p>{planet.properties.diameter}</p>
+                    <h4>Climate : {planet.properties.climate}.</h4>
+                    <h4>Terrain : {planet.properties.terrain}.</h4>
+                    <h4>Population : {planet.properties.population || "Unknown"}.</h4>
+                    <h4>Orbital Period : {planet.properties.orbital_period}.</h4>
+                    <h4>Rotation Period : {planet.properties.rotation_period}.</h4>
+                    <h4>Diameter : {planet.properties.diameter}.</h4>
                 </div>
             </div>
         </div>
