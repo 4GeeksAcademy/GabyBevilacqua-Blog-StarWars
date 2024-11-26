@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import { Context } from "../store/appContext";
-import starWarsLogo from '../../img/starWarsLogo.png';
+import starplata from '../../img/starplata.png';
 import charactersImg from '../../img/characters.png';
 import planetsImg from '../../img/planets.png';
 import vehiclesImg from '../../img/vehicles.png';
@@ -52,7 +52,7 @@ export const Home = () => {
 // https://starwars-visualguide.com/assets/img/planets/11.jpg
 	return (
 		<div className="home-container">
-			<img src={starWarsLogo} alt="Star Wars Logo" className="star-wars-logo" />
+			<img src={starplata} alt="Star Wars Logo" className="star-wars-logo" />
 			<div className="sections">
 				<div className="section">
 					<img src={charactersImg} alt="Characters" className="section-title" />
@@ -70,12 +70,12 @@ export const Home = () => {
 											alt="Character"
 										/>
 										<div className="card-body">
-											<h5 className="card-title" style={{ fontWeight: 'bold', textAlign: 'left' }}>
+											<h5 className="card-title" style={{ fontWeight: 'bold', textAlign: 'left', color: 'white' }}>
 												Name: {person.result.properties.name}
 											</h5>
-											<p className="card-text" style={{ textAlign: 'left' }}>Gender: {person.result.properties.gender}</p>
-											<p className="card-text" style={{ textAlign: 'left' }}>Hair-color: {person.result.properties.hair_color}</p>
-											<p className="card-text" style={{ textAlign: 'left' }}>Eye-color: {person.result.properties.eye_color}</p>
+											<p className="card-text" style={{ textAlign: 'left', color: 'white' }}>Gender: {person.result.properties.gender}</p>
+											<p className="card-text" style={{ textAlign: 'left', color: 'white' }}>Hair-color: {person.result.properties.hair_color}</p>
+											<p className="card-text" style={{ textAlign: 'left', color: 'white' }}>Eye-color: {person.result.properties.eye_color}</p>
 											<div className="buttons d-flex justify-content-between">
 												<NavLink
 													to={`/character/${person.result._id}`}
@@ -112,9 +112,9 @@ export const Home = () => {
 											alt="Planet"
 										/>
 										<div className="card-body">
-											<h5 className="card-title" style={{ fontWeight: 'bold', textAlign: 'left' }}>Name: {planet.result.properties.name}</h5>
-											<p className="card-text" style={{ textAlign: 'left' }}>Climate: {planet.result.properties.climate}</p>
-											<p className="card-text" style={{ textAlign: 'left' }}>Gravity: {planet.result.properties.gravity}</p>
+											<h5 className="card-title" style={{ fontWeight: 'bold', textAlign: 'left', color: 'white' }}>Name: {planet.result.properties.name}</h5>
+											<p className="card-text" style={{ textAlign: 'left', color: 'white' }}>Climate: {planet.result.properties.climate}</p>
+											<p className="card-text" style={{ textAlign: 'left', color: 'white' }}>Gravity: {planet.result.properties.gravity}</p>
 											<div className="buttons d-flex justify-content-between">
 												<NavLink
 													to={`/planet/${planet.result._id}`}
@@ -151,8 +151,8 @@ export const Home = () => {
 											alt="Vehicle"
 										/>
 										<div className="card-body">
-											<h5 className="card-title" style={{ fontWeight: 'bold', textAlign: 'left' }}>Name: {vehicle.result.properties.name}</h5>
-											<p className="card-text" style={{ textAlign: 'left' }}>Class: {vehicle.result.properties.vehicle_class}</p>
+											<h5 className="card-title" style={{ fontWeight: 'bold', textAlign: 'left', color: 'white' }}>Name: {vehicle.result.properties.name}</h5>
+											<p className="card-text" style={{ textAlign: 'left', color: 'white' }}>Class: {vehicle.result.properties.vehicle_class}</p>
 											<div className="buttons d-flex justify-content-between">
 												<NavLink
 													to={`/vehicle/${vehicle.result._id}`}

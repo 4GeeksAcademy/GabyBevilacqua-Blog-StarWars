@@ -67,6 +67,26 @@ export const Vehicles = () => {
                 <div className="character-info">
                     <h1 className="character-name">{vehicle.properties.name}</h1>
                     <p className="character-history">{vehicle.description || "No description available."}</p>
+                    <h2>"Vehículos y naves de Star Wars: máquinas que trascienden las estrellas"</h2>
+                    <p>"El universo de Star Wars no sería el mismo sin sus icónicas naves y vehículos que 
+                        dan vida a emocionantes batallas y grandes aventuras. En el centro de esta flota 
+                        galáctica está el Halcón Milenario, la legendaria nave de Han Solo, que con su 
+                        diseño único y su velocidad impresionante ha ganado un lugar especial en el 
+                        corazón de los fans. Junto a ella, los veloces X-Wings de la Alianza Rebelde 
+                        son símbolo de resistencia, siendo cruciales en la destrucción de la Estrella 
+                        de la Muerte. Por otro lado, los TIE Fighters, con su amenazante zumbido y su 
+                        diseño monocromático, representan el orden opresivo del Imperio, destacando la 
+                        constante lucha entre el bien y el mal en esta galaxia lejana."</p>
+                    <p>"Además de las naves espaciales, los vehículos terrestres de Star Wars también 
+                        son memorables. Los imponentes AT-AT Walkers, con su apariencia de titanes 
+                        mecánicos, siembran el terror en el campo de batalla, como se vio en la épica 
+                        batalla de Hoth. Por contraste, las veloces speeder bikes, utilizadas en los 
+                        bosques de Endor, muestran agilidad y peligro en persecuciones vertiginosas. 
+                        Incluso las naves más recientes, como los Star Destroyers Finalizer del Primer 
+                        Orden, elevan el impacto visual y tecnológico de la franquicia. Cada vehículo, 
+                        ya sea un carguero destartalado o un coloso de guerra, no solo sirve como herramienta 
+                        narrativa, sino que también refuerza la inmersión en un universo donde la imaginación 
+                        no tiene límites."</p>
                 </div>
             </div>
 

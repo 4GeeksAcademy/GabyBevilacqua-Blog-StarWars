@@ -1,6 +1,6 @@
 .custom-navbar {
     background-color: black;
-    padding: 10px 50px;
+    padding: 20px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -8,6 +8,7 @@
 
 .custom-navbar .navbar-logo {
     height: 75px;
+    transform: scale(1.10);
 }
 
 .dropdown .btn-secondary {
@@ -35,7 +36,7 @@
 }
 
 .dropdown-menu .dropdown-item:hover {
-    background-color: lightyellow; 
+    background-color: rgb(81, 113, 155); 
 }
 
 .footer {
