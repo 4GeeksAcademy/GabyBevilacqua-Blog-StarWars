@@ -1,12 +1,13 @@
 .character-container {
-    background-image: url('https://images.unsplash.com/photo-1633723251072-b9cf36493637?q=80&w=1771&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-image: url('https://img.freepik.com/foto-gratis/mesa-control-nave-espacial-interior_23-2151828178.jpg?t=st=1732740687~exp=1732744287~hmac=ee0c37d0568b8334f0a4b88cbc0913ee65c3bcc2f9bf0df0a6b3ee537230139b&w=1060');
     background-size: cover;
     background-position: center; 
     background-repeat: no-repeat;
-    background-color: rgba(30, 41, 61, 0.856);
+    background-color: rgba(30, 41, 61, 0.61);
     background-blend-mode: overlay;
     color: white;
     padding: 20px;
+    height: 100%;
 }
 
 .character-image {
