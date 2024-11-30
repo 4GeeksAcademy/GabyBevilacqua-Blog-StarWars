@@ -1,5 +1,14 @@
 /* 
+import React, { useContext } from "react";
+import { NavLink } from "react-router-dom";
+import { Context } from "../store/appContext";
+import starplata from '../../img/starplata.png';
+import vehiclesImg from '../../img/vehicles.png';
+import "../../styles/home.css";
 
+export const PlanetSection = () => {
+	const { store, actions } = useContext(Context);
+	const { vehicles } = store;
 
 
 const vehicleImageMap = {
@@ -53,8 +62,7 @@ const vehicleImageMap = {
                     );
                 })}
             </div>
-        </div>
-    
+        </div>   
     )
 
 */

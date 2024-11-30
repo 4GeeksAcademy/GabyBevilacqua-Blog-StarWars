@@ -1,4 +1,14 @@
 /* 
+import React, { useContext } from "react";
+import { NavLink } from "react-router-dom";
+import { Context } from "../store/appContext";
+import starplata from '../../img/starplata.png';
+import charactersImg from '../../img/characters.png';
+import "../../styles/home.css";
+
+export const CharacterSection = () => {
+	const { store, actions } = useContext(Context);
+	const { people } = store;
 
 const characterImageMap = {
 		'5f63a36eee9fd7000499be411': '1',
@@ -55,8 +65,7 @@ const characterImageMap = {
 							);
 						})}
 					</div>
-				</div>
-    
+				</div>   
     )
 
 

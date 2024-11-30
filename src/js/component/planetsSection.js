@@ -1,4 +1,14 @@
 /* 
+import React, { useContext } from "react";
+import { NavLink } from "react-router-dom";
+import { Context } from "../store/appContext";
+import starplata from '../../img/starplata.png';
+import planetsImg from '../../img/planets.png';
+import "../../styles/home.css";
+
+export const PlanetSection = () => {
+	const { store, actions } = useContext(Context);
+	const { planets } = store;
 
 const planetImageMap = {
 		'5f7254c11b7dfa00041c6fae': '11',
