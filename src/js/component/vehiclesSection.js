@@ -1,17 +1,14 @@
-/* 
 import React, { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import { Context } from "../store/appContext";
-import starplata from '../../img/starplata.png';
 import vehiclesImg from '../../img/vehicles.png';
 import "../../styles/home.css";
 
-export const PlanetSection = () => {
-	const { store, actions } = useContext(Context);
-	const { vehicles } = store;
+export const VehicleSection = () => {
+    const { store, actions } = useContext(Context);
+    const { vehicles } = store;
 
-
-const vehicleImageMap = {
+    const vehicleImageMap = {
         '5f63a160cf50d100047f97fc': '4',
         '5f63a160cf50d100047f97fd': '7',
         '5f63a160cf50d100047f97fe': '6',
@@ -25,13 +22,13 @@ const vehicleImageMap = {
     };
 
     return (
-    
-    <div className="section">
-        <img src={vehiclesImg} alt="Vehicles" className="section-title" />
+
+        <div className="section">
+            <img src={vehiclesImg} alt="Vehicles" className="section-title" />
             <div className="card-container">
                 {vehicles.map((vehicle, index) => {
                     const vehicleId = vehicle.result._id;
-                     const imageId = vehicleImageMap[vehicleId] || '1';
+                    const imageId = vehicleImageMap[vehicleId] || '1';
 
                     return (
                         <div className="text-center" key={index}>
@@ -51,8 +48,8 @@ const vehicleImageMap = {
                                             Learn More!
                                         </NavLink>
                                         <button
-                                            onClick={() => actions.modFavorites(vehicle)}
-                                            className={`btn btn-danger ${store.favorites.includes(vehicle) ? 'favorited' : ''}`}>
+                                            onClick={() => actions.modalFavorites(vehicle)}
+                                            className={`btn btn-custom ${store.favorites.includes(vehicle) ? 'btn-custom' : ''}`}>
                                             <i className={`fa ${store.favorites.includes(vehicle) ? 'fa-heart' : 'fa-heart-o'}`}></i>
                                         </button>
                                     </div>
@@ -62,7 +59,7 @@ const vehicleImageMap = {
                     );
                 })}
             </div>
-        </div>   
+        </div>
     )
+}
 
-*/

@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { Context } from "../store/appContext";
-import starWarsLogo from '../../img/starWarsLogo.png';
 import nave01 from '../../img/nave01.png'
 
 export const Navbar = () => {
@@ -27,8 +26,8 @@ export const Navbar = () => {
                                 </span>
                                 <i
                                     className="fa fa-trash-o"
-                                    style={{ cursor: "pointer", color: "bacl" }}
-                                    onClick={() => actions.removeFavorite(fav)}
+                                    style={{ cursor: "pointer", color: "black" }}
+                                    onClick={() => actions.deleteFavorite(fav)}
                                 ></i>
                             </li>
                         ))

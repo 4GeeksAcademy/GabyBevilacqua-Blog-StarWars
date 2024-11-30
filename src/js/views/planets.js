@@ -3,7 +3,6 @@ import { useParams } from "react-router-dom";
 import { Context } from "../store/appContext";
 import "../../styles/character.css";
 
-
 const planetImageMap = {
     '5f7254c11b7dfa00041c6fae': '11',
     '5f7254c11b7dfa00041c6faf': '2',

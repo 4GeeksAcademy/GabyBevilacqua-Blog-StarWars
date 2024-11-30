@@ -23,7 +23,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 					if (response.ok) {
 						return data;
 					} else {
-						console.log(`Something went bad ${data}`)
+						console.log(`Algo salio mal ${data}`)
 					}
 				} catch (error) {
 					console.log(error);
@@ -48,7 +48,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 					);
 					setStore({ people: peopleInPage });
 				} catch (error) {
-					console.error("Error trying to bring back the info: ", error);
+					console.error("Error trayendo la info: ", error);
 				}
 			},
 
@@ -70,7 +70,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 					}
 
 				} catch (error) {
-					console.log("Error trying to bring back the info: ", error)
+					console.log("Error trayendo la info: ", error)
 				}
 			},
 
@@ -92,18 +92,18 @@ const getState = ({ getStore, getActions, setStore }) => {
 					}
 
 				} catch (error) {
-					console.log("Error trying to bring back the info: ", error)
+					console.log("Error trayendo la info: ", error)
 				}
 			},
-			modFavorites: (fav) => {
+			modalFavorites: (fav) => {
 
 				let store = getStore();
 				let exists = store.favorites.some((item) => item.result._id == fav.result._id)
 
 				if (exists) {
-					let newFav = store.favorites.filter((item) => item.result._id != fav.result._id)
+					let newFavorite = store.favorites.filter((item) => item.result._id != fav.result._id)
 					setStore({
-						favorites: newFav
+						favorites: newFavorite
 					})
 
 				} else {
@@ -114,10 +114,10 @@ const getState = ({ getStore, getActions, setStore }) => {
 				}
 			},
 
-			removeFavorite: (item) => {
+			deleteFavorite: (item) => {
 				const store = getStore();
-				const updatedFavorites = store.favorites.filter(fav => fav.result._id !== item.result._id);
-				setStore({ favorites: updatedFavorites });
+				const updateFavorites = store.favorites.filter(fav => fav.result._id !== item.result._id);
+				setStore({ favorites: updateFavorites });
 			},
 		}
 	};

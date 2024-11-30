@@ -3,7 +3,6 @@ import { useParams } from "react-router-dom";
 import { Context } from "../store/appContext";
 import "../../styles/character.css";
 
-
 const vehicleImageMap = {
     '5f63a160cf50d100047f97fc': '4',
     '5f63a160cf50d100047f97fd': '7',

@@ -63,3 +63,13 @@
 .card:hover {
     transform: scale(0.97); 
 }
+
+.btn-custom {
+    background-color: rgb(92, 122, 173);
+    color: white; /* Cambia el texto a blanco para contraste */
+    border: white; 
+  }
+  
+  .btn-custom:hover {
+    background-color: rgb(37, 55, 87); /* Color más oscuro al hacer hover */
+  }
